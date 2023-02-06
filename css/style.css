@@ -1,0 +1,51 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TYPO */
+
+
+
+/* COMMON */
+
+
+
+/* HEADER */
+
+.nav-bar{
+    background-color: #0084fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .hamburger{
+    padding: 20px;
+}
+.fa-bars{
+    color: white;
+}
+
+.menu-list{
+    display: none;
+}
+
+
+/* MAIN */
+
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+
+/* RESPONSIVE */
