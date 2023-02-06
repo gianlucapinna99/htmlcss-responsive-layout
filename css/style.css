@@ -21,6 +21,7 @@
 
 .img{
     width: 100%;
+    display: block;
 }
 
 /* HEADER */
@@ -43,6 +44,14 @@
     display: none;
 }
 
+.menu-list ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: auto 25px;
+    color: white;
+}
+
 
 /* MAIN */
 
@@ -60,18 +69,25 @@
     margin-right: 5px;
 }
 
+.big-col{
+    padding-bottom: 0px;
+    padding: 35px 35px 0px 35px;
+}
+
 .big-col, .col{
     margin: 20px;
     border-radius: 30px;
-    padding: 35px;
     text-align: center;
 }
 
+.col{
+    padding: 35px;
+}
 .app-store{
     background-color: #0084fd;
     color: white;
     padding: 7px 50px;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 .col-title{
@@ -93,3 +109,26 @@
 
 
 /* RESPONSIVE */
+
+
+/* MOBILE */
+@media screen and (max-width: 767px){
+    
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .hamburger{
+        display: none;
+    }
+    .menu-list{
+        display: flex;
+    }
+}
