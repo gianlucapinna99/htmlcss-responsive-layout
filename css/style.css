@@ -17,11 +17,19 @@
     border-radius: 20px;
     border-style: none;
     background-color: white;
+    margin: 20px;
 }
 
 .img{
     width: 100%;
     display: block;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
 }
 
 /* HEADER */
@@ -48,19 +56,22 @@
     display: flex;
     list-style: none;
     align-items: center;
-    margin: auto 25px;
+    margin: auto 20px;
     color: white;
 }
 
+.menu-list ul li{
+    margin: auto 20px;
+}
 
 /* MAIN */
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.general{
+    margin: 50px auto 100px auto;
+    width: 90%;
 }
 
-.general div{
+.row div{
     background-color: #b5ddff;
 }
 
@@ -75,7 +86,6 @@
 }
 
 .big-col, .col{
-    margin: 20px;
     border-radius: 30px;
     text-align: center;
 }
@@ -96,7 +106,7 @@
     color: #0084fd;
 }
 
-.general div span .fa-solid{
+.general .row div span .fa-solid{
     color: #0084fd;
     font-size: 100px;
 }
@@ -119,7 +129,12 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 991px){
-    
+    .col{
+        width: calc(100%/3 - 25px);
+    }
+    .big-col{
+        width: calc(100%/3 *2 - 25px);
+    }
 }
 
 
