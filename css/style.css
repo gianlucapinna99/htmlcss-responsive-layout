@@ -12,6 +12,10 @@
 
 /* COMMON */
 
+.general, .planning, .testimonial{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .button{
     padding: 10px;
     border-radius: 20px;
@@ -32,10 +36,28 @@
     gap: 25px;
 }
 
+.container{
+    margin: 50px auto 100px auto;
+    width: 90%;
+}
+
+.c-radius{
+    border-radius: 30px;
+    margin: 0 auto;
+    wi
+}
+
 /* HEADER */
 
-.nav-bar{
+header{
     background-color: #0084fd;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+.nav-bar{
+    margin: 0 auto;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,15 +88,15 @@
 
 /* MAIN */
 
-.general{
-    margin: 50px auto 100px auto;
-    width: 90%;
-}
 
-.row div{
+
+.general .row div{
     background-color: #b5ddff;
 }
 
+.general{
+    margin-top: 150px;
+}
 .fa-apple{
     color: white;
     margin-right: 5px;
@@ -112,6 +134,90 @@
 }
 
 
+/* STRATEGIC */
+
+.strategic{
+    background-color: #9693e4;
+    padding: 40px;
+}
+
+.left-col{
+    color: white;
+}
+
+.left-col img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right-col{
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.planning{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.app-dev{
+        height: 60%;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonial{
+        text-align: center;
+    }
+    .violet{
+        background-color: #9693e4;
+        padding: 20px;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .violet .text h2, .violet .text h4{
+        margin-top: 30px;
+        color: white;
+    }
+
+    .profile-pic{
+        border-radius: 100%;
+        width: 50%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    /* BENEFITS */
+    .benefits .row .col{
+        background-color: white;
+    }
+
+    .benefits h1{
+        display: block;
+    }
+
+    .benefits .title{
+        text-align: center;
+        margin: 20px auto;
+        color: white;
+    }
+
+    .benefits .row .col h1, .benefits .row .col h3{
+        color: #9693e4;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .benefits .row .col{
+        text-align: start;
+    }
 /* FOOTER */
 
 
@@ -123,7 +229,13 @@
 
 /* MOBILE */
 @media screen and (max-width: 767px){
-    
+    .right-col, .left-col{
+        width: 100%;
+    }
+    .planning{
+        margin: 0 auto;
+        width: 100%;
+    }
 }
 
 
@@ -135,15 +247,54 @@
     .big-col{
         width: calc(100%/3 *2 - 25px);
     }
+    .violet{
+        display: flex;
+    }
 }
 
 
 /* DESKTOP */
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px){
+    .col{
+        width: calc(100%/3 - 25px);
+    }
+    .big-col{
+        width: calc(100%/3 *2 - 25px);
+    }
+    .big-int-col, .col-img{
+        width: 50%;
+    }
+    .col-img{
+        display: flex;
+        align-items: flex-end;
+    }
     .hamburger{
         display: none;
     }
     .menu-list{
         display: flex;
+    }
+    .big-col{
+        display: flex;
+    }
+    .left-col, .app-dev{
+        width: 40%;
+    }
+
+    .planning{
+        display: flex;
+    }
+    .right-col{
+        align-items: flex-end;
+    }
+    .app-dev{
+        align-self: flex-end;
+    }
+    .violet{
+        display: flex;
+    }
+
+    .text{
+        align-self: center;
     }
 }
