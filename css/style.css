@@ -218,6 +218,12 @@ header{
     .benefits .row .col{
         text-align: start;
     }
+
+    /* ABOUT US */
+
+    .about-us{
+        text-align: center;
+    }
 /* FOOTER */
 
 
